@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="course.css" />
+  <script src="course.js"></script>
+
+  <head>
+    <title>KodeKloud</title>
+  </head>
+
+  <body>
+    <header>
+      <button class="hideButton">
+        <i onclick="button(this)" class="fa fa-backward"></i>
+      </button>
+    </header>
+
+    <div class="title-list" id="list">
+      <p>The Linux Basics Course</p>
+      <p>Introduction</p>
+      <ul class="mylist">
+        <li>
+          <a href="intro.mp4">Course Introuduction 7:20</a>
+        </li>
+        <li><a href="courseMode.mp4">Course Mode</a></li>
+        <li><a href="intro.mp4">Course Mode1</a></li>
+      </ul>
+    </div>
+
+    <div class="videoSection">
+      <figure id="video_player">
+        <video controls>
+          <source src="courseMode.mp4" type="video/mp4" />
+        </video>
+      </figure>
+    </div>
+  </body>
+</html>

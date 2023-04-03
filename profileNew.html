@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.0/css/all.css" />
+<link rel="stylesheet" href="ProfileNew.css" />
+
+<head>
+  <title>Profile Page</title>
+</head>
+
+<body>
+  <div class="topBar">
+    <a href="./index.html">
+      <img class="logo" src="./photos/logo.png" />
+    </a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">User</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="./index.html">Home</a>
+        <a href="./profileNew.html">My Profile</a>
+        <a href="#myCourses">My Courses</a>
+        <a href="#logout">Log Out</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menue-list" id="list">
+        <p>Welcome User</p>
+        <ul id="myList">
+          <li title="profile" id="profile">
+            <a href="#">Profile</a>
+          </li>
+          <li title="account" id="account">
+            <a href="#">Account</a>
+          </li>
+          <li title="payment" id="payment">
+            <a href="#">Payment</a>
+          </li>
+          <li title="privacy" id="privacy">
+            <a href="#"> Privacy </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="main-content">
+        <p id="profile-content">
+          <iframe class="txtFile" id="myiFrame" src="profileContent.html"></iframe>
+        </p>
+
+        <p hidden id="account-content">
+          <iframe class="txtFile" id="myiFrame" src="accountContent.html"></iframe>
+        </p>
+        <p hidden id="payment-content">
+          <iframe class="txtFile" id="myiFrame" src="paymentContent.html"></iframe>
+        </p>
+        <p hidden id="privacy-content">
+          <iframe class="txtFile" id="myiFrame" src="privacyContent.html"></iframe>
+        </p>
+
+      </div>
+    </div>
+</body>
+
+</html>
+
+<script src="profileNew.js"></script>

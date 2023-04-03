@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <ul id="list">
+      <li>Text1</li>
+      <li>Text2</li>
+      <li>Text3</li>
+      <li>Text4</li>
+    </ul>
+  </body>
+</html>
+
+<style type="text/css">
+  .active {
+    background-color: blue;
+  }
+</style>
+
+<script type="text/javascript">
+  /*fvar list = document.getElementById("list");
+   var listItems = list.getElementsByTagName("li");
+
+
+
+  for (var i = 0; i < listItems.length; i++) {
+     listitems[i].addEventListener("click", function () {
+       if (listitems[i].classList.contains("active")) {
+         listitems[i].classList.remove("active");
+       } else {
+         listitems[i].classList.add("active");
+       }
+     });
+   }*/
+
+  var list = document.getElementById("list");
+  var listItems = list.getElementsByTagName("li");
+
+  for (li of listItems) {
+    li.addEventListener("click", function () {
+      var x = document.querySelectorAll(".active");
+      for (var j = 0; j < x.length; j++) {
+        x[j].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+
+  /*for (li of listItems) {
+    li.addEventListener("click", function () {
+      if (this.classList.contains("active")) {
+        this.classList.remove("active");
+      } else {
+        this.classList.add("active");
+      }
+    });
+  }*/
+</script>

@@ -1,0 +1,20 @@
+{
+  "people": [
+    {
+      "username": "azadeh",
+      "password": "hi"
+    },
+    {
+      "username": "alireza",
+      "password": "bye"
+    },
+    {
+      "username": "sina",
+      "password": "hello"
+    },
+    {
+      "username": "taha",
+      "password": "goodbye"
+    }
+  ]
+}

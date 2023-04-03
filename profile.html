@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.0/css/all.css"
+  />
+  <link rel="stylesheet" href="profile.css" />
+
+  <head>
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <div class="topBar">
+      <a href="./index.html">
+        <img class="logo" src="./photos/logo.png" />
+      </a>
+    </div>
+    <div class="WLCbar">Welcome User!</div>
+    <div id="menue-bar">
+      
+      <button class="active-bar" id="profile">Profile</button>
+      <button id="photo">Photo</button>
+      <button id="payment">Payment</button>
+    </div>
+    <div id="menueDescription">
+      <p id="profile-des">
+        <iframe class="txtFile" id="myiFrame" src="profileContent.html"></iframe>
+      </p>
+      <p hidden id="photo-des">
+        <iframe class="txtFile" id="myiFrame" src="photoContent.html"></iframe>
+      </p>
+      <p hidden id="payment-des">
+        <iframe class="txtFile" id="myiFrame" src="paymentContent.html"></iframe>
+      </p>
+  </body>
+</html>
+
+<script src="profile.js"></script>

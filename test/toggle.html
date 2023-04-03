@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head> </head>
+<body>
+  <div id="first"></div>
+  <div id="second"><img src="./logo.png" />Hello</div>
+  <button type="submit"><i onclick="button(this)">Click</i></button>
+</body>
+<style>
+  #first {
+    background-color: blue;
+    height: 300px;
+    width: 30%;
+    float: left;
+  }
+
+  #second {
+    background-color: red;
+    width: 70%;
+    float: left;
+  }
+</style>
+
+<script>
+  function button(y) {
+    var x = document.getElementById("first");
+    var z = document.getElementById("second");
+    if (x.style.display == "none") {
+      x.style.display = "block";
+
+      //y.classList.toggle("fa-backward");
+    } else {
+      x.style.display = "none";
+      //y.classList.toggle("fa-forward");
+    }
+  }
+</script>

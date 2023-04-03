@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.0/css/all.css"
+  />
+  <link rel="stylesheet" href="course.css" />
+  <head>
+    <title>BuzzKode</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title_header">
+        <button id= "backButton" onclick="goBack()">
+            &#8592
+        </button>
+        <button id="hideButton">
+          <i onclick="button(this)" class="fa fa-backward"> Show/Hide</i>
+        </button>
+        <div class="titleBox">
+          <h3 id="titleboxText">Course Introduction</h3>
+        </div>
+      </div>
+    </header>
+    <figure id="video_player">
+      <div class="title-list" id="list">
+        <p>The Linux Basics Course</p>
+
+        <ul id="myList">
+          <p class="title">Introduction</p>
+
+          <li id="chapter01" title="Course Introduction" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">Course Introuduction (7:20)</a>
+            <p id="01" hidden>Overview for chapter 1 goes here</p>
+          </li>
+          <li id="chapter02" title="Chapter 2" onclick="getID(this.id)">
+            <a href="./videos/courseMode.mp4">chapter 2</a>
+            <p id="02" hidden>Overview for chapter 2 goes here</p>
+          </li>
+          <li id="chapter03" title="chapter 3" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 3</a>
+            <p id="03" hidden>Overview for chapter 3 goes here</p>
+          </li>
+          <li id="chapter04" title="chapter 4" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 4</a>
+            <p id="04" hidden>Overview for chapter 4 goes here</p>
+          </li>
+          <p class="title">Working with the Shell </p>
+          <li id="chapter05" title="chapter 5" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 5</a>
+            <p id="05" hidden>Overview for chapter 5 goes here</p>
+            
+          </li>
+          <li id="chapter06" title="chapter 6" onclick="getID(this.id)">
+            <a href="./videos/courseMode.mp4">chapter 6</a>
+            <p id="06" hidden>Overview for chapter 6 goes here</p>
+          </li>
+          <li id="chapter07" title="chapter 7" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 7</a>
+            <p id="07" hidden>Overview for chapter 7 goes here</p>
+          </li>
+          <li id="chapter08" title="chapter 8" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 8</a>
+            <p id="08" hidden>Overview for chapter 8 goes here</p>
+          </li>
+          <li id="chapter09" title="chapter 9" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 9</a>
+            <p id="09" hidden>Overview for chapter 9 goes here</p>
+          </li>
+          <li id="chapter10" title="chapter 10" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 10</a>
+            <p id="10" hidden>Overview for chapter 10 goes here</p>
+          </li>
+          <li id="chapter11" title="chapter 11" onclick="getID(this.id)">
+            <a href="./videos/intro.mp4">chapter 11</a>
+            <p id="11" hidden>Overview for chapter 11 goes here</p>
+          </li>
+        </ul>
+      </div>
+      <div class="main" id="videoSection">
+        <button id="overlaybtn"><i>Play</i></button>
+        <video id="video" height="100%" width="100%">
+          <source src="./videos/intro.mp4" type="video/mp4" />
+          <source src="./videos/intro.webm" type="video/webm" />
+        </video>
+
+        <div class="controls">
+          <button id="play"><i class="fa fa-play"></i></button>
+          <span id="videoTime"></span> / <span id="videoDuration"></span>
+          <input type="range" id="range" value="0" />
+          <button id="mutebtn"><i class="fas fa-volume-mute"></i></button>
+          <input
+            id="volSlider"
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            step="1"
+          />
+          <button id="fullscreenbtn"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+    </figure>
+    <div id="button-bar">
+      <button class="active-item" id="overview">Overview</button>
+      <button id="notes">Notes</button>
+      <button id="announcement">Announcement</button>
+    </div>
+    <div id="description">
+      <p id="overview-des">
+        <iframe class="txtFile" id="myiFrame" src="overviewTXT.html"></iframe>
+      </p>
+
+      <p hidden id="notes-des">
+        <iframe class="txtFile" id="myiFrame" src="notesTXT.html"></iframe>
+      </p>
+      <p hidden id="announcement-des">
+        <iframe
+          class="txtFile"
+          id="myiFrame"
+          src="announcementTXT.html"
+        ></iframe>
+      </p>
+    </div>
+  </body>
+</html>
+
+<script src="course.js"></script>

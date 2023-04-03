@@ -1,0 +1,4 @@
+git status 
+git add <filename> or all (.)
+git commit -m ""
+git push -u origin master

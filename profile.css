@@ -1,0 +1,52 @@
+body {
+  background-color: #d4eae9;
+}
+
+.topBar {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+  left: -5px;
+  top: -6px;
+}
+
+.WLCbar {
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+#menue-bar {
+  position: relative;
+  width: 180px;
+  height: 700px;
+  top: 45px;
+  left: 520px;
+  line-height: 30px;
+}
+
+#menue-bar button:hover {
+  cursor: pointer;
+}
+
+#menue-bar button {
+  border: none;
+  font-size: 30px;
+  background-color: #d4eae9;
+}
+
+.active-bar {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#menueDescription iframe {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  border: 1px solid gray;
+  left: 700px;
+  top: -671px;
+}

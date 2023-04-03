@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="player1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <video id="video" height="100%" width="100%">
+        <source src="./videos/intro.mp4" />
+      </video>
+      <div class="controls">
+        <button id="play"><i class="fa fa-play"></i></button>
+        <span id="videoTime"></span> / <span id="videoDuration"></span>
+        <input type="range" id="range" value="0" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="player1.js"></script>

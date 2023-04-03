@@ -1,0 +1,27 @@
+version: '3.1'
+services:
+  db:
+    container_name: bazkode-mysql
+    image: mariadb
+    restart: always
+    ports:
+    - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+  apigw:
+    container_name: bazkode-apigw
+    image: ubuntu
+    ports:
+    - "1234"
+    restart: on-failure
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+  bazkode:
+    container_name: bazkode-webserver
+    image: bazkode:1
+    restart: on-failure
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+

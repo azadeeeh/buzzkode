@@ -1,0 +1,31 @@
+
+
+User -> DB
+
+
+Table User-Info
+  Email
+  Courses
+  Subscription-fee
+  Note
+
+Table ID
+  Table 1
+    Chap-Name - Video - Note - VT(View-Time)
+    Introduction - intro.mp4 - "This is a test" -> 2:34
+    commands - com.mp4 - "dghfghgfh" - 4:01
+  Table 2 
+
+
+
+Courses -> DB
+    Table courses
+    ID - Name - OW - VP(Video-Path) - teacher-resume
+    1 - Linux - "foo" - ./linux - ./resume/bazyar.html
+    2 - Net-sec - "bar" - ./netsec - ./resume/ahmadi.html
+
+
+
+    Docker -> mysql -> mariadb
+
+

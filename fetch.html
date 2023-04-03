@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <img src="" id="logo" />
+    <script>
+      console.log("getting a logo");
+
+      async function showLogo() {
+        const response = await fetch("./photos/logo.png");
+        const blob = await response.blob();
+        document.getElementById("logo").src = URL.createObjectURL(blob);
+      }
+
+      showLogo()
+        .then((response) => {
+          console.log("yay");
+        })
+        .catch((error) => {
+          console.log("error!");
+          console.error(error);
+        });
+
+      /**fetch("logo.jpg")
+        .then((response) => {
+          console.log(response);
+          return response.blob();
+        })
+        .then((blob) => {
+          console.log(blob);
+          document.getElementById("logo").src = URL.createObjectURL(blob);
+        })
+        .catch((error) => {
+          console.log("error!");
+          console.error(error);
+        });**/
+    </script>
+  </body>
+</html>
